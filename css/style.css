@@ -1,0 +1,10 @@
+body{
+  font-size: 60px;
+}
+
+.progress{
+  /* border: 1px solid green; */
+  width: 600px;
+  /* position: absolute; */
+  margin-left: 400px;
+}
