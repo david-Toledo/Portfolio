@@ -251,7 +251,7 @@ nav { display: none; }
     /* border: 1px solid red; */
     color: var(--clr-light);
     text-decoration: none;
-    padding: 30px;
+    padding: 25px;
     /* text-align: center; */
 
 }
@@ -263,11 +263,12 @@ nav { display: none; }
 
 
 .portfolio__img {
+    /* margin-top: 50px; */
     transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
     width: 250px;
     height: 200px;
-    margin: auto;
+    margin: 20px auto;
 
 }
 
