@@ -2,20 +2,139 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <script src="js/main.js"></script>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="progress">
 
-      <h2> Hi! </h2>
+    <header>
+      <div class="logo">
+        <img src="img/logo.png" alt="David">
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"> </span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">My work</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <h2> I am David </h2>
+    <!-- intro -->
 
-      <img src="https://res.cloudinary.com/de2syz6av/image/upload/v1613354108/work_in_progress..jpg" alt="work_in_progress">
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>David Toledo</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro"> Software Engineer</p>
+      <img src="img/David.jpg" alt="David" class="intro__img">
+    </section>
 
-    </div>
+    <!-- my services -->
+
+
+
+      <!-- <a href="#work" class="btn">My Projects</a> -->
+
+
+
+
+      <!-- my work -->
+
+      <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My Portfolio</h2>
+              <p class="section__subtitle section__subtitle--work">Some of my works</p>
+
+        <div class="portfolio">
+
+          <div class="project__item">
+            <a href="https://stacey-lewis.github.io/react-air-cnb-app/" target="_blank" class="portfolio__item"> <h3 class="section__title section__title--work">AirCnB</h3>
+            <img src="img/AirCnB.png" alt="" class="portfolio__img">
+            <p class="section__subtitle--description">AirCnB was a group project to clone the AirBnB platform. Basically a platform to book accomodation in Australia only.</p>
+            <p>Tech Stack: Ruby on Rails, React JS, Bootstrap, Charts JS, BrainTree, Git, Heroku.</p>
+            </a>
+
+          </div>
+
+          <div class="project__item">
+
+            <a href="https://swaff-y.github.io/burning-airlines-react/" target="_blank" class="portfolio__item"> <h3 class="section__title section__title--work">Burning Airlines</h3>
+            <img src="img/burning-airlines.png" alt="" class="portfolio__img">
+            <p class="section__subtitle--description">Burning Airlines was a group project to reserve tickets for a plane. This project tested our capabilities as a team to organise and deliver in a very short deadline.</p>
+            <p>Tech Stack: Ruby on Rails, React JS, Bootstrap, Git, Heroku.</p>
+            </a>
+          </div>
+
+          <div class="project__item">
+            <a href="https://ga-shop.herokuapp.com/" target="_blank" class="portfolio__item"> <h3 class="section__title section__title--work">The GA shop</h3>
+            <img src="img/ga-shop.png" alt="" class="portfolio__img">
+            <p class="section__subtitle--description">The GA shop is a mobile friendly e-shop for electronics. This was a solo project to put the CRUD in practice. </p>
+            <p>Tech Stack: Ruby on Rails, Materialize, Git, BrainTree Heroku.</p>
+            </a>
+          </div>
+
+          <div class="project__item">
+            <a href="https://david-toledo.github.io/tictactoe/" target="_blank" class="portfolio__item"> <h3 class="section__title section__title--work">Tic-Tac-Toe</h3>
+            <img src="img/tic-tac-toe.png" alt="tic-tac-toe" class="portfolio__img">
+            <p class="section__subtitle--description">The 2 player worldwide known mobile friendly game in a 3x3 board. This was the first solo project in General Assembly</p>
+            <p>Tech Stack: HTML, CSS, JavaScript, jQuery, Git.</p>
+            </a>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+    <!-- about me -->
+
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about"> About Me</h2>
+      <p class="section__subtitle section__subtitle--about"> FRONT-END BACK-END FULL-STACK</p>
+
+      <div class="about-me__body">
+        <p>I am a software engineer with an industrial engineering background based in Sydney. After almost a decade of planning, pricing and saving costs in the logistics and maritime field, I decided to take on a new challenge to become a software engineer and now looking for an entry role in the tech industry.</p>
+        <p>Experience has included stakeholder management, customer service, decision making, analysing and creating statistical reports, problem-solving and cost-saving.</p>
+        <p>With my passion for technology and my engineering background, I am known as someone who thinks outside the box and able to deliver tangible results using methods, tools and components that are safe and efficient for a better web user experience.</p>
+      </div>
+      <img src="img/wall1.jpg" alt="David" class="about-me__img">
+    </section>
+
+
+
+    <footer>
+      <a href="mailto:david.b.toledo@outlook.com" class="footer__link">david.b.toledo@outlook.com</a>
+      <ul class="social-list">
+        <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/david-b-toledo/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a></li>
+
+        <li class="social-list__item"><a class="social-list__link" href="https://github.com/david-Toledo" target="_blank">
+          <i class="fab fa-github"></i>
+        </a></li>
+        <li class="social-list__item"><a class="social-list__link" href="https://twitter.com/Davo50781947" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a></li>
+
+      </ul>
+    </footer>
+
 
 
   </body>
