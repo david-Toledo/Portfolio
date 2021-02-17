@@ -111,6 +111,7 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
+    color: var(--clr-light);
 }
 
 .section__subtitle--intro,
@@ -291,6 +292,8 @@ nav{
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
+    text-align: justify;
+
 }
 
 .about-me__img {
@@ -384,6 +387,14 @@ nav{
     opacity: .75;
 
 }
+
+@media (max-width: 400px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+    
 
 footer{
   background: #111;
